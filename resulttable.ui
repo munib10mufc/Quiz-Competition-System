@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ResultTable</class>
+ <widget class="QWidget" name="ResultTable">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ResultTable</string>
+  </property>
+  <widget class="QTableView" name="resultTable">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>390</y>
+     <width>256</width>
+     <height>192</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView_2">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>240</y>
+     <width>1041</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(165, 185, 255);</string>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView_3">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>645</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/Login1/Abstract-wallpaper-for-PC-87 (1).jpg);</string>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>50</y>
+     <width>851</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/Login1/logo.png);</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_7">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>260</y>
+     <width>75</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+     <horstretch>21</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::PreventContextMenu</enum>
+   </property>
+   <property name="acceptDrops">
+    <bool>true</bool>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;Segoe Print&quot;;</string>
+   </property>
+   <property name="text">
+    <string>HOME</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="default">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>10</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 10pt &quot;Segoe Print&quot;;</string>
+   </property>
+   <property name="text">
+    <string>LOGOUT</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>graphicsView_3</zorder>
+  <zorder>graphicsView_2</zorder>
+  <zorder>pushButton_3</zorder>
+  <zorder>pushButton_7</zorder>
+  <zorder>graphicsView</zorder>
+  <zorder>resultTable</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="login1.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>ResultTable</receiver>
+   <slot>logout()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>921</x>
+     <y>21</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>875</x>
+     <y>-7</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>ResultTable</receiver>
+   <slot>goHome()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>520</x>
+     <y>270</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>498</x>
+     <y>-7</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>logout()</slot>
+  <slot>goHome()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>assignproject</class>
+ <widget class="QMainWindow" name="assignproject">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>625</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Assign Project</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGraphicsView" name="graphicsView_3">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1024</width>
+      <height>645</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/Login1/Abstract-wallpaper-for-PC-87 (1).jpg);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>10</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 10pt &quot;Segoe Print&quot;;</string>
+    </property>
+    <property name="text">
+     <string>LOGOUT</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>50</y>
+      <width>851</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/Login1/logo.png);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>260</y>
+      <width>75</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+      <horstretch>21</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::PreventContextMenu</enum>
+    </property>
+    <property name="acceptDrops">
+     <bool>true</bool>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Segoe Print&quot;;</string>
+    </property>
+    <property name="text">
+     <string>HOME</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView_2">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>240</y>
+      <width>1041</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(165, 185, 255);</string>
+    </property>
+   </widget>
+   <widget class="QTableView" name="table">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>350</y>
+      <width>501</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/Login1/Abstract-wallpaper-for-PC-87 (1).jpg);</string>
+    </property>
+   </widget>
+   <zorder>graphicsView_3</zorder>
+   <zorder>graphicsView_2</zorder>
+   <zorder>pushButton_7</zorder>
+   <zorder>pushButton_3</zorder>
+   <zorder>graphicsView</zorder>
+   <zorder>table</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>pushButton_7</tabstop>
+  <tabstop>pushButton_3</tabstop>
+  <tabstop>graphicsView_2</tabstop>
+  <tabstop>graphicsView</tabstop>
+  <tabstop>graphicsView_3</tabstop>
+ </tabstops>
+ <resources>
+  <include location="login1.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>assignproject</receiver>
+   <slot>buttonPressToHome()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>255</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>257</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>assignproject</receiver>
+   <slot>goHome1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>532</x>
+     <y>273</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>508</x>
+     <y>-8</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>assignproject</receiver>
+   <slot>logout1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>922</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>895</x>
+     <y>-5</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>buttonPressToHome()</slot>
+  <slot>goToAccom()</slot>
+  <slot>goHome1()</slot>
+  <slot>logout1()</slot>
+ </slots>
+</ui>

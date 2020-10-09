@@ -1,0 +1,55 @@
+﻿Build started 12/5/2014 1:38:45 AM.
+     1>Project "C:\Users\RONI\Documents\Visual Studio 2013\Projects\Login1\Login1\Login1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\Qt5.3.2\5.3\msvc2013_opengl\include /I.\GeneratedFiles\Release /IC:\Qt\Qt5.3.2\5.3\msvc2013_opengl\include\QtCore /IC:\Qt\Qt5.3.2\5.3\msvc2013_opengl\include\QtGui /IC:\Qt\Qt5.3.2\5.3\msvc2013_opengl\include\QtWidgets /nologo /W1 /WX- /O2 /Oy- /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt DbConnection.cpp mydal.cpp
+         DbConnection.cpp
+         mydal.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\RONI\Documents\Visual Studio 2013\Projects\Login1\Win32\Release\\Login1.exe" /NOLOGO /LIBPATH:C:\Qt\Qt5.3.2\5.3\msvc2013_opengl\lib qtmain.lib Qt5Core.lib Qt5Gui.lib Qt5Widgets.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:\Users\RONI\Documents\Visual Studio 2013\Projects\Login1\Win32\Release\Login1.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\RONI\Documents\Visual Studio 2013\Projects\Login1\Win32\Release\Login1.lib" /MACHINE:X86 /SAFESEH Release\adddestination.obj
+         Release\AddParticipant.obj
+         Release\AddProject.obj
+         Release\addresult.obj
+         Release\assignproject.obj
+         Release\DbConnection.obj
+         Release\Duties.obj
+         Release\ExpenseDataFetch.obj
+         Release\finance.obj
+         Release\firstpage.obj
+         Release\qrc_login1.obj
+         Release\moc_adddestination.obj
+         Release\moc_AddParticipant.obj
+         Release\moc_AddProject.obj
+         Release\moc_addresult.obj
+         Release\moc_assignproject.obj
+         Release\moc_Duties.obj
+         Release\moc_finance.obj
+         Release\moc_firstpage.obj
+         Release\moc_HomeScreen.obj
+         Release\moc_LCDNumber.obj
+         Release\moc_login1.obj
+         Release\moc_Profile.obj
+         Release\moc_RemoveParticipant.obj
+         Release\moc_resulttable.obj
+         Release\moc_showschedule.obj
+         Release\moc_timer.obj
+         Release\HomeScreen.obj
+         Release\login1.obj
+         Release\main.obj
+         Release\mydal.obj
+         Release\Participant.obj
+         Release\Person.obj
+         Release\Profile.obj
+         Release\RemoveParticipant.obj
+         Release\ResultDataFetch.obj
+         Release\resulttable.obj
+         Release\showschedule.obj
+         Release\SocietyMembers.obj
+         Release\SponsorDataFetch.obj
+         Release\timer.obj
+         Login1.vcxproj -> C:\Users\RONI\Documents\Visual Studio 2013\Projects\Login1\Win32\Release\Login1.exe
+     1>Done Building Project "C:\Users\RONI\Documents\Visual Studio 2013\Projects\Login1\Login1\Login1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.68

@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>timer</class>
+ <widget class="QMainWindow" name="timer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>839</width>
+    <height>401</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>munib</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/Login1/Abstract-wallpaper-for-PC-87 (1).jpg);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>841</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/Login1/logo.png);</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumber">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>152</y>
+      <width>281</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:reflect, x1:0.465909, y1:0.074, x2:0.494, y2:0.807, stop:0 rgba(117, 255, 216, 255), stop:1 rgba(255, 255, 255, 255));</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="digitCount">
+     <number>10</number>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Flat</enum>
+    </property>
+    <property name="intValue" stdset="0">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="StartButton">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>250</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Print</family>
+      <underline>false</underline>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AddButton">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>280</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Print</family>
+      <underline>false</underline>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>Add time</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="DeductButton">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>310</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Print</family>
+      <underline>false</underline>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>Deduct time</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>230</y>
+      <width>46</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="text">
+     <string>Hours</string>
+    </property>
+    <property name="wordWrap">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>230</y>
+      <width>46</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="text">
+     <string>Mins</string>
+    </property>
+    <property name="wordWrap">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>230</y>
+      <width>46</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="text">
+     <string>Secs</string>
+    </property>
+    <property name="wordWrap">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="StartHour">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>250</y>
+      <width>42</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="wrapping">
+     <bool>false</bool>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::PlusMinus</enum>
+    </property>
+    <property name="showGroupSeparator" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="maximum">
+     <number>23</number>
+    </property>
+    <property name="value">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="StartMins">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>250</y>
+      <width>42</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::PlusMinus</enum>
+    </property>
+    <property name="maximum">
+     <number>59</number>
+    </property>
+    <property name="value">
+     <number>12</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="StartSecs">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>250</y>
+      <width>42</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::PlusMinus</enum>
+    </property>
+    <property name="accelerated">
+     <bool>false</bool>
+    </property>
+    <property name="maximum">
+     <number>59</number>
+    </property>
+    <property name="value">
+     <number>20</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="AddSecs">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>280</y>
+      <width>42</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::PlusMinus</enum>
+    </property>
+    <property name="maximum">
+     <number>59</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="AddMins">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>280</y>
+      <width>42</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::PlusMinus</enum>
+    </property>
+    <property name="maximum">
+     <number>59</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="AddHours">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>280</y>
+      <width>42</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::PlusMinus</enum>
+    </property>
+    <property name="maximum">
+     <number>23</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="DeductSecs">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>310</y>
+      <width>42</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::PlusMinus</enum>
+    </property>
+    <property name="maximum">
+     <number>59</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="DeductMins">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>310</y>
+      <width>42</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::PlusMinus</enum>
+    </property>
+    <property name="maximum">
+     <number>59</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="DeductHours">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>310</y>
+      <width>42</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::PlusMinus</enum>
+    </property>
+    <property name="maximum">
+     <number>23</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Proceedtohomebutton">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>230</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Procees to Home</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>839</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="login1.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>StartButton</sender>
+   <signal>clicked()</signal>
+   <receiver>timer</receiver>
+   <slot>starter()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>608</x>
+     <y>293</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>528</x>
+     <y>265</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AddButton</sender>
+   <signal>clicked()</signal>
+   <receiver>timer</receiver>
+   <slot>addTime()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>573</x>
+     <y>330</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>500</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DeductButton</sender>
+   <signal>clicked()</signal>
+   <receiver>timer</receiver>
+   <slot>deductTime()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>589</x>
+     <y>358</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>497</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Proceedtohomebutton</sender>
+   <signal>clicked()</signal>
+   <receiver>timer</receiver>
+   <slot>makegui()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>348</x>
+     <y>289</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>376</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>starter()</slot>
+  <slot>addTime()</slot>
+  <slot>deductTime()</slot>
+  <slot>makegui()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ManageDuties</class>
+ <widget class="QMainWindow" name="ManageDuties">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Create Groups</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>50</y>
+      <width>861</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/Login/123);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>10</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 10pt &quot;Segoe Print&quot;;</string>
+    </property>
+    <property name="text">
+     <string>LOGOUT</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView_2">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>240</y>
+      <width>1041</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(165, 185, 255);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>270</y>
+      <width>134</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+      <horstretch>21</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::PreventContextMenu</enum>
+    </property>
+    <property name="acceptDrops">
+     <bool>true</bool>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Segoe Print&quot;;</string>
+    </property>
+    <property name="text">
+     <string>HOME SCREEN</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1024</width>
+      <height>640</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Ignored" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1024</width>
+      <height>640</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/Login/Abstract-wallpaper-for-PC-87 (1).jpg);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>360</y>
+      <width>88</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enter Group Name</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>360</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>400</y>
+      <width>238</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Group include participant XYZ and participant ABC</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>360</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enter</string>
+    </property>
+   </widget>
+   <zorder>graphicsView_3</zorder>
+   <zorder>graphicsView</zorder>
+   <zorder>pushButton_3</zorder>
+   <zorder>graphicsView_2</zorder>
+   <zorder>pushButton_7</zorder>
+   <zorder>label</zorder>
+   <zorder>lineEdit</zorder>
+   <zorder>label_2</zorder>
+   <zorder>pushButton</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="login1.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>ManageDuties</receiver>
+   <slot>goHome()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>120</x>
+     <y>259</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>211</x>
+     <y>-13</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>ManageDuties</receiver>
+   <slot>logout()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>932</x>
+     <y>21</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>903</x>
+     <y>-18</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>goHome()</slot>
+  <slot>logout()</slot>
+ </slots>
+</ui>
